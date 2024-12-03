@@ -7,7 +7,7 @@ export default function MovieList({ movies, onToggleWatched, onDeleteMovie }) {
       {movies.map((movie) => (
         <Movie
           key={movie.id}
-          movie={movie}
+          movieToWatch={movie}
           onToggleWatched={onToggleWatched}
           onDeleteMovie={onDeleteMovie}
         />
